@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    text-align: center;
+    font-family: $main-font;
+    color: $text-color;
+    
+}
+
+
+/* Link Styles */
+
+a {
+    text-decoration: none;
+    color: $link-color;
+      &:hover {
+          color: #9968FF;
+      }
+}
+legend{
+  display: none;
+}
+fieldset{
+  border:none;
+  @include flex-display(flex, column, space-around, 100%,center);
+  h3{
+    @include font-fam-size(0.8em,$main-font-2,bold,#000);
+    opacity: 0.6;
+  
+    padding: 5px;
+
+    span{
+      @include font-fam-size(1.2em,$main-font,bolder,#d6202b);
+
+    }
+    b{
+      @include font-fam-size(1.2em,$main-font,bolder, #25d9fd);
+
+
+    }
+
+
+  }
+
+
+}
+
