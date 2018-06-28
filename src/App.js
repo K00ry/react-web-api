@@ -21,7 +21,7 @@ export default class App extends Component {
 
     axios
       .get(
-        `http://ws.audioscrobbler.com/2.0/?method=artist.search&artist=${query}&api_key=${lastfmApiKey}&format=json&limit=10`,
+        `https://ws.audioscrobbler.com/2.0/?method=artist.search&artist=${query}&api_key=${lastfmApiKey}&format=json&limit=10`,
       )
 
       .then(response => {
@@ -68,7 +68,7 @@ export default class App extends Component {
 //////////////////////////////////////
       axios
           .get(
-              `http://ws.audioscrobbler.com/2.0/?method=artist.getInfo&artist=${artist}&api_key=${lastfmApiKey}&format=json&limit=10`,
+              `https://ws.audioscrobbler.com/2.0/?method=artist.getInfo&artist=${artist}&api_key=${lastfmApiKey}&format=json&limit=10`,
           )
 
           .then(response => {

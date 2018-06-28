@@ -16,6 +16,13 @@
 		"oAP": "\/.env",
 		"oF": 0
 		},
+	"\/.gitattributes": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/.gitattributes",
+		"oF": 0
+		},
 	"\/.gitignore": {
 		"cB": 0,
 		"ft": 8192,
@@ -86,21 +93,21 @@
 		"oAP": "\/build\/static\/css\/main.90a0590e.css.map",
 		"oF": 0
 		},
-	"\/build\/static\/js\/main.33cd7042.js": {
+	"\/build\/static\/js\/main.c432f596.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/build\/static\/js\/main.33cd7042-min.js",
+		"oAP": "\/build\/static\/js\/main.c432f596-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
-	"\/build\/static\/js\/main.33cd7042.js.map": {
+	"\/build\/static\/js\/main.c432f596.js.map": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/build\/static\/js\/main.33cd7042.js.map",
+		"oAP": "\/build\/static\/js\/main.c432f596.js.map",
 		"oF": 0
 		},
 	"\/node_modules": {
