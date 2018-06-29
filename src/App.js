@@ -13,7 +13,8 @@ export default class App extends Component {
     retrieved: [],
     retrievedFlickr: [],
       retrievedInfo:[],
-    rightIndex: 0
+    rightIndex: 0,
+      noResults: []
   };
 
   submitClicked = query => {
@@ -26,8 +27,8 @@ export default class App extends Component {
 
       .then(response => {
          let dataArr = response.data.results.artistmatches.artist;
-         let filtered = dataArr.filter(arr => arr.image[3]["#text"] !== "");
-        // console.log(filtered);
+         let filtered = dataArr.filter(arr => arr.image[4]["#text"] !== "");
+
         this.setState({
           retrieved: filtered,
         });
@@ -50,15 +51,20 @@ export default class App extends Component {
       )
       .then(response => {
           let dataArray = response.data.photos.photo;
+          let cantFind;
           if(dataArray.length === 0){
+              cantFind =
+                  <div className="no-results">
+                      <span>
+                          No results
+                      </span>
+                  </div>;
 
-            console.log(response.data.photos.photo);
-            // this.clickFlick("right")
           }
-
 
         this.setState({
           retrievedFlickr: dataArray,
+            noResults: cantFind
         });
       })
       .catch(error => {
@@ -145,6 +151,7 @@ export default class App extends Component {
           show={this.state.show}
           onHide={this.handleClose}
           onNext_Prev={this.clickFlick}
+          noResults={this.state.noResults}
         />
       </div>
     );

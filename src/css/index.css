@@ -403,7 +403,6 @@ fieldset {
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
     color: #000;
-    opacity: 0.6;
     padding: 5px; }
     fieldset h3 span {
       font-size: 1.2em;
@@ -430,16 +429,10 @@ fieldset {
   width: 100%;
   align-items: center;
   margin: auto;
-  background-color: #fff; }
-  .main-wrapper .engines {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-    align-items: center;
-    padding-bottom: 20px; }
+  background-color: #fff;
+  padding-bottom: 20px; }
 
-.spotify {
+.lastFm {
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -462,11 +455,11 @@ fieldset {
   flex-direction: column;
   justify-content: space-around;
   width: center;
-  border-bottom: solid #56EE6F 1px;
+  border-bottom: solid #919191 1px;
   padding: 4px 0;
   transition: all 1s; }
   .covers:hover {
-    box-shadow: 0px 3px 25px #0b4000; }
+    box-shadow: 0px 3px 25px #434343; }
   .covers img {
     max-width: 150px;
     height: auto;
@@ -474,9 +467,12 @@ fieldset {
     align-self: center;
     border-radius: 10px; }
 
-@media (min-width: 1024px) {
-  .modal-dialog {
-    width: 90%; } }
+.modal-dialog {
+  width: 100%;
+  margin: 0; }
+  @media (min-width: 1024px) {
+    .modal-dialog {
+      width: 90%; } }
 
 #overlay {
   display: flex;
@@ -491,9 +487,9 @@ fieldset {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 90%;
+  width: 100%;
+  margin: auto;
   background-color: #272727;
-  padding: 8px 0;
   border-radius: 5px;
   opacity: 0.8; }
   @media (min-width: 1024px) {
@@ -503,125 +499,58 @@ fieldset {
       justify-content: space-between;
       width: 90%;
       margin: auto; } }
-  .overlay-content .flickr-div {
-    width: 100%;
-    background-color: #1b1b1b; }
-    @media (min-width: 768px) {
-      .overlay-content .flickr-div {
-        padding: 10px; } }
-  .overlay-content .last-fm-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 100%; }
-    .overlay-content .last-fm-info img {
-      max-width: 100%;
-      width: 50%;
-      border-radius: 5px;
-      height: auto;
-      margin: auto; }
-    .overlay-content .last-fm-info p {
-      font-size: 1em;
-      font-family: "Rubik", sans-serif;
-      font-weight: bold;
-      color: #fff;
-      margin: 20px auto;
-      width: 80%; }
-  .overlay-content .Flick-cover {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30%;
-    align-items: center;
-    margin: 20px 0; }
-    .overlay-content .Flick-cover p {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      width: 100%;
-      align-items: center;
-      margin: 0; }
-      .overlay-content .Flick-cover p a {
-        margin: auto; }
-    .overlay-content .Flick-cover img {
-      max-width: 200px;
-      width: auto;
-      height: auto;
-      border: 2px solid #5f461d;
-      border-radius: 6px; }
-  .overlay-content .content-holder {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 100%;
-    align-items: center; }
-    @media (min-width: 768px) {
-      .overlay-content .content-holder {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 80%;
-        align-items: center;
-        flex-wrap: wrap;
-        height: 80%;
-        margin: auto; } }
-  .overlay-content .album-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 100%;
-    align-items: center; }
-    .overlay-content .album-info h1,
-    .overlay-content .album-info h2,
-    .overlay-content .album-info h3 {
-      margin: 6px 0;
-      float: left;
-      color: #EBB301; }
-      .overlay-content .album-info h1 span,
-      .overlay-content .album-info h2 span,
-      .overlay-content .album-info h3 span {
-        color: #fff; }
-      .overlay-content .album-info h1 h2,
-      .overlay-content .album-info h2 h2,
-      .overlay-content .album-info h3 h2 {
-        font-size: 2em; }
-    @media (min-width: 768px) {
-      .overlay-content .album-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 100%;
-        align-items: flex-start; } }
 
 .modal-header {
-  border-bottom: none; }
+  border-bottom: none;
+  display: none; }
   .modal-header .close {
     font-size: 60px;
     line-height: 0;
     text-shadow: 0 1px 0 #000;
     color: #fff; }
 
+.last-fm-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%; }
+  .last-fm-info img {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 5px;
+    height: auto;
+    margin: auto; }
+  .last-fm-info p {
+    font-size: 1em;
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    color: #fff;
+    margin: 20px auto;
+    width: 90%; }
+
 .genres-bar {
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 60%; }
+  width: 100%; }
   .genres-bar h3 {
-    font-size: 1.4em;
-    font-family: "Rubik", sans-serif;
+    font-size: 1.6em;
+    font-family: "Poiret One", cursive;
     font-weight: bold;
-    color: #d6202b; }
+    color: #d6202b;
+    margin: auto; }
   .genres-bar .genres {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 100%;
-    color: #FFFFFF;
-    margin: 20px auto; }
+    width: 70%;
+    flex-wrap: wrap;
+    color: #ffffff;
+    margin: 10px auto; }
     .genres-bar .genres .genres-tags {
-      font-size: 0.8em;
-      font-family: "Poiret One", cursive;
+      font-size: 0.4em;
+      font-family: "Rubik", sans-serif;
       font-weight: bold;
       color: #d6202b;
       background: #c40e0e;
@@ -634,14 +563,77 @@ fieldset {
       -moz-border-radius: 28;
       border-radius: 28px;
       color: #ffffff;
-      font-size: 18px;
-      padding: 1px 8px;
-      text-decoration: none; }
+      font-size: 12px;
+      padding: 2px 6px;
+      text-decoration: none;
+      margin: 5px; }
+
+.content-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  background-color: #1b1b1b; }
+  @media (min-width: 768px) {
+    .content-holder {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 80%;
+      align-items: center;
+      flex-wrap: wrap;
+      height: 80%;
+      margin: auto; } }
+
+.flickr-div {
+  width: 100%;
+  background-color: #1b1b1b;
+  padding: 20px 0; }
+  @media (min-width: 768px) {
+    .flickr-div {
+      padding: 10px; } }
+  .flickr-div .lastfm-h {
+    font-size: 1.4em;
+    font-family: "Merriweather", serif;
+    font-weight: bold;
+    color: #fff;
+    margin: 10px auto; }
+    .flickr-div .lastfm-h .big-title {
+      font-size: 1.5em;
+      font-family: "Merriweather", serif;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 1px 2px 25px #5F74CF; }
+
+.Flick-cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center; }
+  .Flick-cover img {
+    max-width: 100%;
+    width: 100%; }
+    @media (min-width: 768px) {
+      .Flick-cover img {
+        border: 2px solid #5f461d;
+        border-radius: 6px; } }
+
+.no-results {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center; }
+  .no-results span {
+    color: #FFFFFF; }
 
 .left-arrow,
 .right-arrow {
+  display: none;
   color: #fff;
-  font-size: 4em;
+  font-size: 2em;
   width: 10%; }
 
 .main-search {
@@ -692,17 +684,18 @@ fieldset {
 
 label {
   font-size: 3em;
-  font-family: "Poiret One", cursive;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  color: #1CA800;
+  color: #000000;
   margin: 20px auto;
-  text-shadow: 1px 2px 25px #1CA800;
+  text-shadow: 1px 2px 15px #434343;
   opacity: 0.7; }
 
 .input-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  text-shadow: 1px 2px 25px #434343;
   margin: auto;
   border: 2px solid;
   border-radius: 40px;
@@ -731,7 +724,7 @@ input[name="search"] {
   border-radius: 30px;
   padding: 0 10px;
   font-size: 1.5em;
-  font-family: "Poiret One", cursive;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold; }
   input[name="search"]:focus {
     outline: none; }
@@ -739,24 +732,19 @@ input[name="search"] {
 button {
   margin: auto; }
 
-.overlay-content #flickr-h {
+.overlay-content .flickr-h {
   font-size: 1.4em;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Merriweather", serif;
   font-weight: bold;
   color: #fff;
   margin: 10px auto; }
-  .overlay-content #flickr-h .big-flickr {
-    font-size: 1.5em;
+  .overlay-content .flickr-h .big-flickr {
+    font-size: 1em;
     font-family: "Merriweather", serif;
     font-weight: bold;
     color: #5F74CF;
     text-shadow: 1px 2px 25px #5F74CF; }
-  .overlay-content #flickr-h .big-title {
-    font-size: 1.5em;
-    font-family: "Merriweather", serif;
-    font-weight: bold;
-    text-shadow: 1px 2px 25px #5F74CF; }
-  .overlay-content #flickr-h .album {
+  .overlay-content .flickr-h .album {
     color: yellow; }
 
 .cover-span {

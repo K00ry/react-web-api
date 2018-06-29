@@ -27,8 +27,8 @@ handleSubmit = (e) =>{
   render() {
     return (
       <div className="main-wrapper">
-        <div className="engines">
-          <form className="spotify" onSubmit={this.handleSubmit}>
+
+          <form className="lastFm" onSubmit={this.handleSubmit}>
             <fieldset>
               <legend>search widget for spotify</legend>
               <label>Artist Search</label>
@@ -42,7 +42,7 @@ handleSubmit = (e) =>{
                         id="flickr-search"
                         type="text"
                         name="search"
-                        placeholder="Search..."
+                        // placeholder="Search..."
                         data-search
                     />
                     <Button bsSize="small"
@@ -57,7 +57,7 @@ handleSubmit = (e) =>{
 
             </fieldset>
           </form>
-        </div>
+
       </div>
     );
   }

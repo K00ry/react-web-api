@@ -24,11 +24,12 @@ legend{
   display: none;
 }
 fieldset{
+
   border:none;
   @include flex-display(flex, column, space-around, 100%,center);
   h3{
     @include font-fam-size(0.8em,$main-font-2,bold,#000);
-    opacity: 0.6;
+    //opacity: 0.6;
   
     padding: 5px;
 

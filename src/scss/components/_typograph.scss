@@ -1,13 +1,14 @@
 label {
-    @include font-fam-size(3em, $main-font, bold, #1CA800);
+    @include font-fam-size(3em, $main-font-2, bold, #000000);
     margin: 20px auto;
-    text-shadow: 1px 2px 25px #1CA800;
+    text-shadow: 1px 2px 15px #434343;
     opacity: 0.7;
 }
 
 
 .input-wrapper{
     @include flex-display(flex, row, space-between);
+    text-shadow: 1px 2px 25px #434343;
     margin:auto;
     border: 2px solid;
     border-radius: 40px;
@@ -48,7 +49,7 @@ input[name="search"] {
     border: none;
     border-radius: 30px;
     padding: 0 10px;
-    @include font-fam-size(1.5em, $main-font, bold);
+    @include font-fam-size(1.5em, $main-font-2, bold);
     //@include media(tablet) {
     //
     //}
@@ -73,22 +74,22 @@ button {
 }
 
 .overlay-content {
-    #flickr-h {
-        @include font-fam-size(1.4em, $main-font-2, bold, #fff);
+    .flickr-h {
+        @include font-fam-size(1.4em, $main-font-3, bold, #fff);
         margin: 10px auto;
         .big-flickr {
-            @include font-fam-size(1.5em, $main-font-3, bold, $hard-blue);
+            @include font-fam-size(1em, $main-font-3, bold, $hard-blue);
             text-shadow: 1px 2px 25px $hard-blue;
         }
-        .big-title{
-            @include font-fam-size(1.5em, $main-font-3, bold);
-            text-shadow: 1px 2px 25px $hard-blue;
-        }
+
         .album {
             color: yellow;
         }
     }
 }
+
+
+
 
 .cover-span{
     @include font-fam-size(1em, $main-font-2, bold, #232323);
