@@ -76,38 +76,38 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/build\/static\/css\/main.90a0590e.css": {
+	"\/build\/static\/css\/main.14f375e5.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/build\/static\/css\/main.90a0590e-min.css",
+		"oAP": "\/build\/static\/css\/main.14f375e5-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"\/build\/static\/css\/main.90a0590e.css.map": {
+	"\/build\/static\/css\/main.14f375e5.css.map": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/build\/static\/css\/main.90a0590e.css.map",
+		"oAP": "\/build\/static\/css\/main.14f375e5.css.map",
 		"oF": 0
 		},
-	"\/build\/static\/js\/main.c432f596.js": {
+	"\/build\/static\/js\/main.aa19a622.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/build\/static\/js\/main.c432f596-min.js",
+		"oAP": "\/build\/static\/js\/main.aa19a622-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
-	"\/build\/static\/js\/main.c432f596.js.map": {
+	"\/build\/static\/js\/main.aa19a622.js.map": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/build\/static\/js\/main.c432f596.js.map",
+		"oAP": "\/build\/static\/js\/main.aa19a622.js.map",
 		"oF": 0
 		},
 	"\/node_modules": {
@@ -248,16 +248,6 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/src\/components\/SearchForm-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/src\/components\/Tags.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/src\/components\/Tags-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0

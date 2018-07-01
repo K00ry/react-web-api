@@ -1,51 +1,55 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-
-    text-align: center;
-    font-family: $main-font;
-    color: $text-color;
-    
+  text-align: center;
+  font-family: $main-font;
+  color: $text-color;
 }
-
 
 /* Link Styles */
 
 a {
-    text-decoration: none;
-    color: $link-color;
-      &:hover {
-          color: #9968FF;
-      }
+  text-decoration: none;
+  color: $link-color;
+  &:hover {
+    color: #9968ff;
+  }
 }
-legend{
+
+.modal.in .modal-dialog {
+  @include media(tablet) {
+    width: 100%;
+  }
+  @include media(laptop) {
+    width: 70%;
+    margin: auto;
+  }
+}
+legend {
   display: none;
 }
-fieldset{
-
-  border:none;
-  @include flex-display(flex, column, space-around, 100%,center);
-  h3{
-    @include font-fam-size(0.8em,$main-font-2,bold,#000);
+fieldset {
+  border: none;
+  @include flex-display(flex, column, space-around, 100%, center);
+  h3 {
+    @include font-fam-size(1em, $main-font-2, bold, #000);
     //opacity: 0.6;
-  
+    @include media(tablet) {
+      font-size: 1.2em;
+    }
+    @include media(laptop) {
+      font-size: 1.3em;
+    }
+
     padding: 5px;
 
-    span{
-      @include font-fam-size(1.2em,$main-font,bolder,#d6202b);
-
+    span {
+      @include font-fam-size(1.2em, $main-font-2, bolder, #d6202b);
     }
-    b{
-      @include font-fam-size(1.2em,$main-font,bolder, #25d9fd);
-
-
+    b {
+      @include font-fam-size(1.2em, $main-font-2, bolder, #25d9fd);
     }
-
-
   }
-
-
 }
-
