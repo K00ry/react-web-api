@@ -773,7 +773,7 @@ fieldset {
     font-family: "Merriweather", serif;
     font-weight: bold;
     color: #fff;
-    margin: 10px auto; }
+    margin: auto; }
     .artist-title .lastfm-h .big-title {
       font-size: 1.8em;
       font-family: "Oswald", sans-serif;
@@ -830,6 +830,14 @@ fieldset {
     font-size: 2em;
     font-family: "Poiret One", cursive;
     font-weight: bold; }
+
+.overlay-close-button {
+  background-color: #1b1b1b; }
+  .overlay-close-button span {
+    float: right;
+    color: #FFF;
+    font-size: 26px;
+    padding: 5px 15px; }
 
 .left-arrow,
 .right-arrow {

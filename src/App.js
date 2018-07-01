@@ -47,7 +47,7 @@ export default class App extends Component {
       )
       .then(response => {
         let dataArray = response.data.photos.photo;
-        // let cantFind;
+
         if (dataArray.length === 0) {
           this.setState({
             retrievedFlickr: dataArray,
@@ -70,7 +70,6 @@ export default class App extends Component {
       )
 
       .then(response => {
-        console.log(response.data.artist);
         let jaber = {};
         let dataArr = response.data.artist;
         jaber.coverSrc = dataArr.image[4]['#text'];
@@ -95,6 +94,9 @@ export default class App extends Component {
   };
 
   clickFlick = arrow => {
+    this.setState({
+      noResults: false,
+    });
     if (arrow === 'right') {
       let rightCover = this.state.rightIndex + 1;
 

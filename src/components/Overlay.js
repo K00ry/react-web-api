@@ -60,7 +60,13 @@ export default class Overlay extends Component {
             <Glyphicon glyph="menu-left" />
           </span>
           <div className="overlay-content">
-            <Modal.Header closeButton={true}/>
+            {/*<Modal.Header closeButton={true}/>*/}
+            <div className="overlay-close-button">
+
+                <Glyphicon glyph="remove" onClick={this.props.onHide}/>
+
+
+            </div>
             <div className="artist-title">
               <h2 className="lastfm-h">
                 <span className="big-title">

@@ -76,21 +76,21 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/build\/static\/css\/main.63aa1ed3.css": {
+	"\/build\/static\/css\/main.5848be13.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/build\/static\/css\/main.63aa1ed3-min.css",
+		"oAP": "\/build\/static\/css\/main.5848be13-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"\/build\/static\/css\/main.63aa1ed3.css.map": {
+	"\/build\/static\/css\/main.5848be13.css.map": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/build\/static\/css\/main.63aa1ed3.css.map",
+		"oAP": "\/build\/static\/css\/main.5848be13.css.map",
 		"oF": 0
 		},
 	"\/build\/static\/js\/main.8ec75d6e.js": {
@@ -1060,7 +1060,7 @@
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
-	"alwaysUseExternalServer": 0,
+	"alwaysUseExternalServer": 1,
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
@@ -2451,7 +2451,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "http:\/\/localhost:8888",
+	"externalServerAddress": "http:\/\/localhost:3000",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
@@ -3036,7 +3036,7 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
-	"overrideExternalServerCSS": 0,
+	"overrideExternalServerCSS": 1,
 	"previewPathAddition": "",
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, \/storage\/framework\/sessions, node_modules",
 	"sourceFolderName": "source",

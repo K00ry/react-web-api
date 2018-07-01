@@ -192,7 +192,7 @@
   }
   .lastfm-h {
     @include font-fam-size(1.4em, $main-font-3, bold, #fff);
-    margin: 10px auto;
+    margin: auto;
 
     .big-title {
       @include font-fam-size(1.8em, $main-font-2, bold, #fff);
