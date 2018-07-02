@@ -503,8 +503,9 @@ fieldset {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -524,7 +525,7 @@ fieldset {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 100%;
+  width: 40%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -693,8 +694,9 @@ fieldset {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     width: 70%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -702,9 +704,9 @@ fieldset {
     margin: 10px auto; }
     @media (min-width: 768px) {
       .genres-bar .genres {
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
         width: 60%; } }
     .genres-bar .genres .genres-tags {
       font-size: 0.4em;
